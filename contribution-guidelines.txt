@@ -1,0 +1,29 @@
+Length
+
+The sentence should have fewer than 15 words.
+
+Spelling and Punctuation
+
+The sentence must be spelled correctly.
+
+Speakable
+
+The best sentences are natural and conversational — they should be easy for someone to read. While phonetic diversity and different words in sentences is important, we are also trying to make recording sentences as engaging and fun for our volunteer community as possible.
+
+Numbers
+
+There should ideally be no digits in the source text because they can cause problems when read aloud. The way a number is read depends on context and might introduce confusion in the dataset. For example, the number “2409” could be accurately read as both “twenty-four zero nine” and “two thousand four hundred nine”.
+
+Abbreviations and Acronyms
+
+Abbreviations and acronyms like “USA” or “ICE” should be avoided in the source text because they may be read in a way that does not coincide with their spelling. Additionally, there may be multiple accurate readings for a single abbreviation.
+
+Special Characters and Foreign Letters
+
+Letters must be valid in the language being spoken. For example, “ж” is a letter in the Russian alphabet but is never used in English and so should never appear in any English source text.
+
+Languages can have their own validation rules with additional requirements when they localize. If there is no specific validation file for a language, the English rules will show for contributors.
+
+Offensive Content
+
+If the sentence is offensive or upsetting - for example because of explicit content, or another violation of our community participation guidelines - you should reject the sentence. You can also reach out to us at commonvoice@mozilla.com to escalate the issue.
