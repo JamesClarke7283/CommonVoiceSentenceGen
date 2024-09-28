@@ -401,6 +401,7 @@ Quality score:"""
 - We ensure sentences are between 9 and 14 words and check for similarity to promote diversity.
 - We tag each sentence into a category/domain only if it fits into it.
 - At the very end, we use a superior model ({val_model_name}) to ensure every sentence meets the guidelines before publication.
+- Source Code: https://github.com/JamesClarke7283/CommonVoiceSentenceGen
 """.strip()
 
         # Write each sentence with the required metadata
