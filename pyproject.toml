@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CVSentenceGen"
+dynamic = ["version"]
+description = "Generate High Quality Sentences for Common Voice."
+authors = [
+    {name = "James David Clarke", email = "james@jamesdavidclarke.com"},
+]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "openai",
+    "language_tool_python",
+    "tqdm",
+    "tortoise-orm",
+    "aiosqlite",
+    "python-dotenv"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+]
+
+[project.urls]
+Homepage = "https://github.com/JamesClarke7283/CommonVoiceSentenceGen"
+"Bug Tracker" = "https://github.com/JamesClarke7283/CommonVoiceSentenceGen/issues"
+
+[tool.setuptools]
+packages = ["src"]
+
+[project.scripts]
+cvsentencegen = "src.main:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true

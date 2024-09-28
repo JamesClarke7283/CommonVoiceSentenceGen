@@ -1,0 +1,29 @@
+[client_generation]
+api_key = "ollama"  # Required but ignored by Ollama's OpenAI compatibility mode
+base_url = "http://[API_HOSTNAME]:11434/v1/"
+model_name = "qwen2.5:14b-instruct-q8_0"
+
+[client_validation]
+api_key = "[API_KEY_HERE]"
+base_url = "https://openrouter.ai/api/v1/"
+model_name = "qwen/qwen-2.5-72b-instruct"
+
+[domains]
+list = [
+    "Agriculture and Food",
+    "Automotive and Transport",
+    "Finance",
+    "General",
+    "Healthcare",
+    "History, Law and Government",
+    "Language Fundamentals (e.g. Digits, Letters, Money)",
+    "Media and Entertainment",
+    "Nature and Environment",
+    "News and Current Affairs",
+    "Service and Retail",
+    "Technology and Robotics"
+]
+
+[sampling]
+total_sentences = 1000  # Adjust as needed
+sample_percent = 0.10  # Top 10%
