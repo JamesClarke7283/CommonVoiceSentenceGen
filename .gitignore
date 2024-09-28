@@ -165,3 +165,4 @@ cython_debug/
 prompt.txt
 config.toml
 *.db*
+sentences.tsv
